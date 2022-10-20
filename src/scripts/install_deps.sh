@@ -10,14 +10,9 @@ sudo apt -y install docker-ce
 sudo apt -y install docker-compose
 sudo apt -y install python3-pip
 
-# Install required pip packages
-pip3 install rcds
-
 # Ability to run Docker without sudo
 sudo usermod -aG docker ${USER}
 
 # Make sure Docker is installed correctly
 docker run hello-world
 
-# Install RCTF (installs to /opt/rctf, `run docker ps -l` to see running Docker container)
-curl https://get.rctf.redpwn.net | sudo sh

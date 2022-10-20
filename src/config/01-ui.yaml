@@ -1,0 +1,77 @@
+ctfName: HTH CTF 2022
+
+meta:
+  description: 'Hackers Teaching Hackers CTF'
+  imageUrl: 'https://www.hthackers.com'
+
+homeContent: |
+  # Welcome to HTH CTF 2022!
+
+  The CTF will run from 9:00 AM on Thursday November 3rd to 2:00 PM on Friday November 4th 2022.
+
+  <action-button href="/register">
+    <span>Register Now</span>
+    <svg viewBox="4 4 16 16"><path fill="#ffffff" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path></svg>
+  </action-button>
+  
+  <timer></timer>
+
+  # Sponsors
+  Thank you to our amazing sponsors for making this event possible!
+
+  <sponsors></sponsors>
+
+sponsors:
+  - name: Battelle
+    icon: https://2022.hthackers.com/backstage/public/portals/785330486/siteResources/57726000000271783
+    description: |
+      Battelle's vision is to be a major force in science and technology discovery and in the translation of knowledge into innovative applications that have significant societal and economic impacts. Learn more at Battelle's [Cyber Careers](https://www.battelle.org/cyber-careers) page.
+    small: false
+
+  - name: Tenable
+    icon: https://2022.hthackers.com/backstage/public/portals/785330486/siteResources/57726000000271888
+    description: |
+      Tenable® is the Cyber Exposure company. Approximately 40,000 organizations around the globe rely on Tenable to understand and reduce cyber risk. As the creator of Nessus®, Tenable extended its expertise in vulnerabilities to deliver the world;s first platform to see and secure any digital asset on any computing platform. Tenable customers include approximately 60 percent of the Fortune 500, approximately 40 percent of the Global 2000, and large government agencies. Learn more at [tenable.com](https://www.tenable.com/).
+    small: false
+
+  - name: Northrop Grumman
+    icon: https://2022.hthackers.com/backstage/public/portals/785330486/siteResources/57726000000572958
+    description: |
+      Possible drives us at Northrop Grumman. It's at the heart of everything we do - compelling us to solve the challenges between space and below the waves. Working together with people from many backgrounds, personal passions and disciplines, we share a drive to push the boundaries of advancement through science, technology and engineering. We are 90,000 people - with careers across all areas: air, cyber, land, sea and space - working as one to defend and build the future. Learn more at Northrop Grumman's [Ohio Carrers](https://northropgrumman.jobs/jobs/?location=ohio) page.
+    small: false
+
+  - name: Attackd
+    icon: https://2022.hthackers.com/backstage/public/portals/785330486/siteResources/57726000000276004
+    description: |
+      Attackd provides penetration testing services for your network, web apps, mobile, and wireless environments. [http://attackd.com](http://attackd.com)
+    small: false
+
+  - name: Quest
+    icon: https://2022.hthackers.com/backstage/public/portals/785330486/siteResources/57726000000260007
+    description: |
+      Strengthen your cyber resilience against the next hybrid Active Directory and Office 365 security threat with solutions that detect, defend against and recover from security incidents, outages or disasters. With more than 20 years' experience, 184 million accounts managed, 166 million accounts audited and 95 million accounts migrated, Quest is the clear leader when it comes to hybrid Active Directory. [https://www.quest.com/solutions/cyber-security-resilience/](https://www.quest.com/solutions/cyber-security-resilience/)
+    small: false
+
+  - name: Schneider Downs
+    icon: https://2022.hthackers.com/backstage/public/portals/785330486/siteResources/57726000000271799
+    description: |
+      Schneider Downs can help your organization to be better prepared. We offer a comprehensive set of IT security and risk advisory services, including network penetration assessments, network vulnerability assessments, web application security testing, IT security maturity assessments and more. [https://www.schneiderdowns.com/cybersecurity](https://www.schneiderdowns.com/cybersecurity)
+    small: false
+
+  - name: Corelight
+    icon: https://2022.hthackers.com/backstage/public/portals/785330486/siteResources/57726000000663017
+    description: |
+      Corelight offers network traffic analysis solutions for cybersecurity. Disrupt future attacks with complete network visibility, next-level analytics, faster investigations, and expert threat hunting. [https://corelight.com/](https://corelight.com/)
+    small: false
+
+  - name: Trimarc
+    icon: https://2022.hthackers.com/backstage/public/portals/785330486/siteResources/57726000000663034
+    description: |
+      Trimarc is a professional services company in Washington, DC that helps organizations better secure their Active Directory, Azure AD, and VMware environments. Our team members have operational, and security experience & this expertise enables us to more quickly and effectively improve our customers' security posture. Our deep understanding of Microsoft & VMware technologies and typical security issues/misconfigurations enable us to provide actionable recommendations. Trimarc security assessments provide detailed, prioritized recommendations that can be implemented more quickly. Our reporting methodology provide clear paths to resolution; most high priority issues we discover are resolved in days to weeks, not years. [https://www.TrimarcSecurity.com](https://www.TrimarcSecurity.com)
+    small: false
+
+  - name: Gigamon
+    icon: https://2022.hthackers.com/backstage/public/portals/785330486/siteResources/57726000000807028
+    description: |
+      Gigamon offers a deep observability pipeline that harnesses actionable network-level intelligence to amplify the power of observability tools. This powerful combination enables IT organizations to assure security and compliance governance, speed root-cause analysis of performance bottlenecks, and lower operational overhead associated with managing hybrid and multi-cloud IT infrastructures. The result: modern enterprises realize the full transformational promise of the cloud. Gigamon serves more than 4,000 customers worldwide, including over 80 percent of Fortune 100 enterprises, nine of the 10 largest mobile network providers, and hundreds of governments and educational organizations worldwide. To learn more, please visit [gigamon.com](https://www.gigamon.com/).
+    small: false

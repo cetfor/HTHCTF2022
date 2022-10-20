@@ -1,0 +1,19 @@
+name: POST Malone
+author: cetfor
+description: |-
+  Have you heard of this new web API wrapper names POST Malone?
+  Check 'em out at http://3.22.183.86:7501
+flag:
+  file: server/flag.txt
+
+containers:
+  app:
+    build: server
+    ports:
+      - 7801
+
+expose:
+  app:
+    - target: 7801
+      http: posty
+      healthContent: POST Malone
