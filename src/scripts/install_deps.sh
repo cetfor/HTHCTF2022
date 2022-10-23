@@ -15,4 +15,3 @@ sudo usermod -aG docker ${USER}
 
 # Make sure Docker is installed correctly
 docker run hello-world
-

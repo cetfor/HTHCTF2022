@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-def read_flag(flag_file="flag"):
+def read_flag(flag_file="flag.txt"):
     try:
         with open(flag_file, "r") as f:
             return f.read()
