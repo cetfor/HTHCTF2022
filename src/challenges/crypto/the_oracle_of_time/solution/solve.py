@@ -12,7 +12,7 @@ def connect():
 def main():
     BUFFER_SIZE = 1024
     
-    alphabet = 'HTH}{_abcdefghijklmnopqrstuvwxyz'
+    alphabet = 'abcdefghijklmnopqrstuvwxyz_HTH}{'
     last_check_time = 0
     guess = "------------------------\n"
     
