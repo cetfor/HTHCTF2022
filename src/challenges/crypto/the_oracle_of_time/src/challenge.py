@@ -23,7 +23,7 @@ def main():
 
     for i, char in enumerate(flag):
         if char == user_input[i]:
-            time.sleep(1)
+            time.sleep(0.25)
     
     if user_input == flag:
         print(f"That's it! These are your wishes! Use '{user_input}' as your flag.")

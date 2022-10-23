@@ -40,9 +40,9 @@ def main():
                 data = s.recv(BUFFER_SIZE)
             end = time.time()
             delta = end - start
-
+            
             print("Delta: {0:.2f}".format(delta))
-            if delta > (last_check_time + 0.5):
+            if delta > (last_check_time + 0.20):
                 last_check_time += delta
                 s.close()
                 break
