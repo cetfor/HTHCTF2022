@@ -4,7 +4,7 @@ import time
 
 def connect():
     TCP_IP = '127.0.0.1'
-    TCP_PORT = 21150
+    TCP_PORT = 7602
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((TCP_IP, TCP_PORT))
     return s
@@ -12,13 +12,13 @@ def connect():
 def main():
     BUFFER_SIZE = 1024
     
-    alphabet = '_abcdefghijklmnopqrstuvwxyz{}'
+    alphabet = 'HTH}{_abcdefghijklmnopqrstuvwxyz'
     last_check_time = 0
-    guess = "_____________________\n"
+    guess = "------------------------\n"
     
-    # by observation, we know the challenge server won't even check a key less than 21 characters
-    for i in range(0, 21):
-
+    # by observation, we know the challenge server wants 24 characters
+    for i in range(0, 24):
+        
         # we're merely guessing the valid characters in a flag, we could make this alphabet more complex to try more characters
         for char in alphabet:
 
@@ -42,7 +42,7 @@ def main():
             delta = end - start
 
             print("Delta: {0:.2f}".format(delta))
-            if delta > (last_check_time + 0.15):
+            if delta > (last_check_time + 0.5):
                 last_check_time += delta
                 s.close()
                 break
