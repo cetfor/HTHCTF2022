@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+   web_post_malone:
+     build: ./src/challenges/web/post_malone
+     restart: always
+     ports:
+      - "7501:7501"
+   
+   web_the_client_is_always_right:
+     build: ./src/challenges/web/the_client_is_always_right
+     restart: always
+     ports:
+      - "7502:7502"
+
