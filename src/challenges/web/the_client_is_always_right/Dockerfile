@@ -1,7 +1,6 @@
-FROM python:3.9.2-slim-buster
-RUN pip install aiohttp --no-cache-dir
+FROM python:3.10.6-slim-buster
+RUN python -m pip install Flask
 WORKDIR /app
-COPY app.py server.py ./
-USER nobody
-ENV FLAG HTH{cli3nt_sid3_is_b3st_sid3}
-CMD ["python3", "app.py"]
+COPY templates/ /app/templates/
+COPY app.py .
+CMD ["python", "app.py"]

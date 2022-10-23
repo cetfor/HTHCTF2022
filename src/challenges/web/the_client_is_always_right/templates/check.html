@@ -1,0 +1,15 @@
+
+<title>You are always right!</title>
+
+<!doctype html>
+<title>Admins Only</title>
+<link rel="stylesheet" href="/style.css" />
+<div class="container">
+    <h1>Admins Only</h1>
+    {% if admin %}
+    You're right, I'm so sorry. Please come right in!<br /><br />
+    HTH{cli3nt_sid3_is_b3st_sid3}
+    {% else %}
+    I'm so sorry client, you must be an admin to view this content.
+    {% endif %}
+</div>
