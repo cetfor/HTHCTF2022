@@ -8,10 +8,10 @@ Run the following commands to get everything configured on your system. Tested o
 
 ```
 sudo apt install git
-git clone https://gitlab.com/hackers-teaching-hackers/hthctf2022
-cd HTHCTF2022/src/scripts/
-chmod +x install_deps.sh
-./install_deps.sh
+git clone https://github.com/cetfor/HTHCTF2022
+cd HTHCTF2022
+chmod +x HTHCTF2022/src/scripts/install_deps.sh
+./HTHCTF2022/src/scripts/install_deps.sh
 ```
 
 # Start challenge set with docker-compose
