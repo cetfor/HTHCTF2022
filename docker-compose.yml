@@ -14,6 +14,12 @@ services:
     ports:
      - "7502:7502"
 
+  web_no_peeking:
+    build: ./src/challenges/web/no_peeking
+    restart: always
+    ports:
+     - "7503:7503"
+  
   # Crypto challenges (ports 7601-7605)
   crypto_caesar_salad:
     build: ./src/challenges/crypto/caesar_salad

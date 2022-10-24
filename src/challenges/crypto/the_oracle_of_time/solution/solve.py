@@ -12,7 +12,7 @@ def connect():
 def main():
     BUFFER_SIZE = 1024
     
-    alphabet = 'abcdefghijklmnopqrstuvwxyz_HTH}{'
+    alphabet = 'HTH}{_abcdefghijklmnopqrstuvwxyz'
     last_check_time = 0
     guess = "------------------------\n"
     
@@ -42,7 +42,7 @@ def main():
             delta = end - start
             
             print("Delta: {0:.2f}".format(delta))
-            if delta > (last_check_time + 0.20):
+            if delta > (last_check_time + 0.15):
                 last_check_time += delta
                 s.close()
                 break

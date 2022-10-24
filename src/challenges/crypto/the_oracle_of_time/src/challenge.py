@@ -2,7 +2,7 @@ import time
 
 def main():
     flag = "HTH{time_can_tell_a_lot}"
-
+    
     print("\nLet me see those coins, I'll check them for you.")
     print("Coins >> ", end="")
 
