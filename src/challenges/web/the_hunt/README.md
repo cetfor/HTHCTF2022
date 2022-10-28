@@ -8,6 +8,14 @@ Navigate into server directory: npm start
 
 need:
 
-Dockerfile
+- [ ] test time to decode jwt (might have to do digits only)
 
-add to docker-compose.yaml 
+- [ ] directory transversal
+
+- [ ] run a final build before Monday
+
+- [ ] Dockerfile
+
+- [ ] add to docker-compose.yaml 
+
+- [ ] test on final hosting ip 
