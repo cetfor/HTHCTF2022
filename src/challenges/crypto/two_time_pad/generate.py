@@ -9,6 +9,9 @@ import itertools
 # http://www.crypto-it.net/eng/attacks/two-time-pad.html
 # https://samwho.dev/blog/toying-with-cryptography-crib-dragging/
 
+# A useful online crib dragging tool is:
+# http://www.cribdrag.com
+
 def encrypt(msg, key):
     '''
     Return cipher text
@@ -83,3 +86,6 @@ print(f"xor_hex_text(cipher1, cipher2) = {xor_hex_text(cipher1, cipher2).encode(
 print(f"xor_str(msg1, msg2)            = {xor_str(msg1, msg2).encode('utf-8').hex()}")
 
 # now we need to crib drag
+# however we named this challenge "WhenIsNextTacoTuesday???" 
+# so astute players may not need to spend too much time on this.
+
