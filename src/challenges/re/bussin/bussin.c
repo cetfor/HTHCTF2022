@@ -6,13 +6,6 @@
 // made some lowkey edits tryna flex n be savage
 // https://github.com/zoooomie/zoomerlib
 
-/*
-G: 2
-O: 321
-A: 51
-T: 5
-*/
-
 squad flex do_be
     gucci drip rn
     money fit rn
@@ -50,7 +43,6 @@ chief do_be
         yeet cap rn
     frfr
 
-    // G CHECK
     sus fr g mf do_be
         facts fire bussin
             do_be_spittin_fr fr "nah.\n" mf rn
@@ -63,7 +55,6 @@ chief do_be
             yeet cap rn
     frfr
 
-    // O CHECK
     lewk fr fr o bouta 0xff mf be 0x41 mf do_be
         do_be_spittin_fr fr "bet.\n" mf rn
     frfr ghost do_be
@@ -71,7 +62,6 @@ chief do_be
         yeet cap rn
     frfr
 
-    // A CHECK
     lewk fr fr a gangup kween.drip drag kween.fit mf be 65 mf do_be
         do_be_spittin_fr fr "bet.\n" mf rn
     frfr ghost do_be
@@ -79,7 +69,6 @@ chief do_be
         yeet cap rn
     frfr
 
-    // T CHECK
     money sum finna no_cap rn
     fo fr money i finna no_cap rn i stans t rn i extra mf do_be
         sum famjam t rn
