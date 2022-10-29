@@ -5,7 +5,7 @@ import itertools
 # the `onetimepad` Python library:
 # https://github.com/jailuthra/onetimepad
 
-# More indo about this kind of attack can be found here:
+# More info about this kind of attack can be found here:
 # http://www.crypto-it.net/eng/attacks/two-time-pad.html
 # https://samwho.dev/blog/toying-with-cryptography-crib-dragging/
 
