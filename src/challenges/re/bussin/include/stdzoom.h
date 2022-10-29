@@ -2,6 +2,7 @@
 #define STDZOOM_H
 
 #include <stdlib.h>
+#include <stdio.h>
 
 #define sheesh malloc
 #define cancel free
