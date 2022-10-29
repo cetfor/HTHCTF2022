@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="mains.css">
+    </head>
+    <body>
+        <nav class="header">
+            <img src="/img/headerBackground.png" alt="navbarBg" />
+            <ul class="navBar">
+                <li><a href="/"><img src="/img/homeIcon.png" alt="navbarImage" ></a></li>
+                <li><a href="0/skull"><img src="/img/skull.png" alt="navbarImage" ></a></li>
+                <li><a href="/1"><img src="/img/skullFireHeaderIcon.png" alt="navbarImage" ></a></li>
+                <li><a href="/ship"><img src="/img/shipHeader.png" alt="navbarImage" ></a></li>
+              </ul>
+        </nav>
+        <div class="welcome">
+            <h4>
+                Hello there, welcome.
+            </h4>
+            <%if(locals.username){%>
+                <p>You are logged in as <%=username%></p>
+                <h1>hth{flag_2}</h1>
+                <a href="/logout">Logout</a>
+            <%} else { %>
+                <a href="/login">Login</a>
+                <% } %>
+        </div>
+    </body>
+</html>
