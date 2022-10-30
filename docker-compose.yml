@@ -59,4 +59,18 @@ services:
     tty: true
   
   # Pwnable challenges (ports 7801-7805)
-  
+  pwn_information_disclosure:
+    build: ./src/challenges/pwn/information_disclosure
+    restart: always
+    ports:
+      - "7801:7801"
+    stdin_open: true
+    tty: true
+
+  pwn_ret2win:
+    build: ./src/challenges/pwn/ret2win
+    restart: always
+    ports:
+      - "7802:7802"
+    stdin_open: true
+    tty: true
