@@ -5,12 +5,9 @@ app = Flask(__name__)
 @app.route('/', methods = ['GET'])
 def root():
     admin = request.cookies.get('admin')
-    
     resp = make_response(render_template('check.html', admin=admin))
-
     if not admin:
         resp.set_cookie('admin', 'false')
-    
     return resp
 
 if __name__ == '__main__':
