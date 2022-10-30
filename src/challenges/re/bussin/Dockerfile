@@ -2,5 +2,5 @@ FROM python:3.10.6-slim-buster
 RUN apt update
 RUN apt -y install socat
 WORKDIR /app
-COPY src/ /app/src/
+COPY bussin /app/bussin
 ENTRYPOINT socat TCP4-listen:7701,reuseaddr,fork EXEC:"./bussin"
