@@ -1,5 +1,11 @@
 version: '3.3'
 
+# Current AWS Inbound Rules:
+# 7501 - 7505: Web Challenges
+# 7601 - 7605: Crypto Challenges
+# 7701 - 7705: RE Challenges
+# 7801 - 7805: Pwnable Challenges
+
 services:
   # Web challenges (ports 7501-7505)
   web_post_malone:
@@ -20,7 +26,7 @@ services:
     ports:
      - "7503:7503"
   
-  the_hunt:
+  web_the_hunt:
     build: ./src/challenges/web/the_hunt
     restart: always
     ports:
@@ -42,3 +48,15 @@ services:
       - "7602:7602"
     stdin_open: true
     tty: true
+
+  # RE challenges (ports 7701-7705)
+  re_bussin:
+    build: ./src/challenges/re/bussin
+    restart: always
+    ports:
+      - "7701:7701"
+    stdin_open: true
+    tty: true
+  
+  # Pwnable challenges (ports 7801-7805)
+  
