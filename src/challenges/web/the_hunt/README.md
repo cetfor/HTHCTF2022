@@ -8,7 +8,7 @@ Navigate into server directory: npm start
 
 need:
 
-- [ ] test time to decode jwt (might have to do digits only)
+- [x] test time to decode jwt (might have to do digits only) - less than one minute using rockyou list
 
 - [ ] directory transversal
 
