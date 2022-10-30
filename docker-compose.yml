@@ -20,6 +20,12 @@ services:
     ports:
      - "7503:7503"
   
+  the_hunt:
+    build: ./src/challenges/web/the_hunt
+    restart: always
+    ports:
+     - "7504:7504"
+  
   # Crypto challenges (ports 7601-7605)
   crypto_caesar_salad:
     build: ./src/challenges/crypto/caesar_salad
