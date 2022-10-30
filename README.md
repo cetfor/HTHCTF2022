@@ -16,14 +16,15 @@ chmod +x HTHCTF2022/src/scripts/install_deps.sh
 
 # Building the Docker containers
 
-Run this to blow all Docker images and containers away.
+Run this to build all Docker images.
 ```
-docker-compose build
+docker-compose build             # build using layer cache
+docker-compose build --no-cache  # build without cache
 ```
 
 # Start challenge set with docker-compose
 
-Run this to blow all Docker images and containers away.
+Run this to start all Docker containers.
 ```
 docker-compose up       # Run and monitor
 docker-compose up -d    # Run as daemon

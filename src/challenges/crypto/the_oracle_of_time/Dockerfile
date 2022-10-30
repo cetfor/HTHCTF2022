@@ -4,4 +4,4 @@ RUN apt -y install socat
 WORKDIR /app
 COPY src/ /app/src/
 WORKDIR /
-ENTRYPOINT socat -T0 -t0 TCP4-listen:7602,tcpwrap=script,reuseaddr,fork EXEC:"python -u /app/src/challenge.py </dev/null >/dev/null 2>&1"
+ENTRYPOINT socat -T0 -t0 TCP4-listen:7602,tcpwrap=script,reuseaddr,fork,su=nobody EXEC:"python -u /app/src/challenge.py </dev/null >/dev/null 2>&1"
