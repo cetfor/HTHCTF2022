@@ -1,5 +1,6 @@
 # Solution and Explaination
 
+```
 Python has many "magic functions" which are inherited by object types.
 In this problem, if you type "True" or "False", the interpreter doesn't 
 know what you mean, since these have been removed. However you can still 
@@ -26,3 +27,4 @@ contains "load_module" which doesn't require a reference to 'self'.
 
 To get the 104 offset, I used this command in a Python 3.10.6 interpreter:
 for i in range(0,1000): print(i, ().__class__.__base__.__subclasses__()[i])
+```
