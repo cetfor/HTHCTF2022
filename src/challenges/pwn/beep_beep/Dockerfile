@@ -3,4 +3,4 @@ RUN apt update
 RUN apt -y install socat
 WORKDIR /app
 COPY src/ /app/src/
-ENTRYPOINT socat TCP4-listen:7603,reuseaddr,fork,su=nobody EXEC:"python -u /app/src/beepbeep.py"
+ENTRYPOINT socat TCP4-listen:7803,reuseaddr,fork,su=nobody EXEC:"python -u /app/src/beepbeep.py"

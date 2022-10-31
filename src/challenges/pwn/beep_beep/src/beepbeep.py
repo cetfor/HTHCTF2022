@@ -17,7 +17,7 @@ quotes = [
     "Wait a sec! Hold on!",
     "Stop! I'm just a kid!",
     "What seems to be the problem?",
-    "Look, mister, I need a ride. My friends and I just had a run-in with these really disgusting people; you might have heard of them: the Fratellis. Well, we found their hideout, and could you please, please take me to the sheriff station. I can describe all three of 'em. The driver turns on the interior lights. It's Jake! Chunk, startled, takes a step back.",
+    "Look, mister, I need a ride. My friends and I just had a run-in with these really disgusting people; you might have heard of them: the Fratellis. Well, we found their hideout, and could you please, please take me to the sheriff station. I can describe all three of 'em.",
     "Nim bob iyo qi verenya de Mario...",
     "Itro la vista di vitro la vista la mama.",
 ]
