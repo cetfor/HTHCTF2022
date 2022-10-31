@@ -59,8 +59,8 @@ services:
     tty: true
   
   # Pwnable challenges (ports 7801-7805)
-  pwn_information_disclosure:
-    build: ./src/challenges/pwn/information_disclosure
+  pwn_repeater_service:
+    build: ./src/challenges/pwn/repeater_service
     restart: always
     ports:
       - "7801:7801"
