@@ -74,3 +74,11 @@ services:
       - "7802:7802"
     stdin_open: true
     tty: true
+  
+  pwn_beep_beep:
+    build: ./src/challenges/pwn/beep_beep
+    restart: always
+    ports:
+      - "7803:7803"
+    stdin_open: true
+    tty: true

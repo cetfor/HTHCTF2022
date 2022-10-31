@@ -2,11 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
- * sudo gcc id.c -o id
- * python3 -c "print('%lx.'*80)" | ./id
- */
-
 int main(int argc, char** argv)
 {
     char flag[64];
@@ -37,7 +32,7 @@ int main(int argc, char** argv)
 
     // repeat the user
     printf(inputString);
-
+    
     puts("\nThanks for listening to yourself!\n");
     return EXIT_SUCCESS;
 }
