@@ -1,0 +1,126 @@
+html {
+  margin: 0px;
+  padding: 0;
+  text-align: center;
+  background-color: black;
+  color: aqua;
+}
+.header {
+  display: flex;
+  height: 30vh;
+  align-items: center;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  justify-content: space-around;
+  padding: 0;
+}
+
+ul, .navbar {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+.navBar img {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+}
+
+.skulls {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 90vh;
+}
+
+.skulls img {
+  height: 50px;
+  border-radius: 15px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 68vh;
+}
+
+.home img {
+  width: 100%;
+  height: 100%;
+}
+
+.skull {
+  background-color: black;
+  text-align: center;
+  color: red;
+  height: 75vh;
+
+  p {
+    margin: 0;
+  }
+}
+
+.skull img {
+  height: 50vh;
+}
+
+ 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-danger {
+  color: red;
+}
+
+.input-field {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.input-field input {
+  padding: 0.8rem;
+}
+
+form .input-field:first-child {
+  margin-bottom: 1.5rem;
+}
+
+form input[type="submit"] {
+  background: linear-gradient(to left, #4776e6, #8e54e9);
+  color: white;
+  border-radius: 4px;
+  margin-top: 2rem;
+  padding: 0.4rem;
+  width: 10%;
+}

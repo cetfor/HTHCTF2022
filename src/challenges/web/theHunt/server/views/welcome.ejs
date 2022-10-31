@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="mains.css">
+    </head>
+    <body>
+        <nav class="header">
+            <img src="/img/headerBackground.png" alt="navbarBg" />
+            <ul class="navBar">
+                <li><a href="/"><img src="/img/homeIcon.png" alt="navbarImage" ></a></li>
+                <li><a href="0/skull"><img src="/img/skull.png" alt="navbarImage" ></a></li>
+                <li><a href="/1"><img src="/img/skullFireHeaderIcon.png" alt="navbarImage" ></a></li>
+                <li><a href="/ship"><img src="/img/shipHeader.png" alt="navbarImage" ></a></li>
+              </ul>
+        </nav>
+
+        <div class="welcome">
+            <%if(locals.username){%>
+                <h4>You are welcome here</h4>
+                <p>You are logged in as <%=username%></p>
+                <h1>hth{playing_with_cookies}</h1>
+                    <a href="/logout">Logout</a>
+                <%} else { %>
+                    <h4>Forbidden!</h4>
+                    <a href="/login">Login</a>
+                    <% } %>
+        </div>
+    </body>
+</html>
