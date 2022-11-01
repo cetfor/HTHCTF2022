@@ -5,6 +5,7 @@ version: '3.3'
 # 7601 - 7605: Crypto Challenges
 # 7701 - 7705: RE Challenges
 # 7801 - 7805: Pwnable Challenges
+# 7901       : Kali101
 
 services:
   # Web challenges (ports 7501-7505)
@@ -80,5 +81,14 @@ services:
     restart: always
     ports:
       - "7803:7803"
+    stdin_open: true
+    tty: true
+  
+  # Kali101 challenges (ports 7901)
+  kali101_challenges:
+    build: ./src/challenges/kali101
+    restart: always
+    ports:
+      - "7901:7901"
     stdin_open: true
     tty: true

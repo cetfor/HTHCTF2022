@@ -1,0 +1,20 @@
+{
+    "level01": {
+        "intro": "From a terminal shell, you can almost always type '<toolname> --help' to determine command line syntax and additional switches/flags/options used with the tool.\nIt's worth noting that --help may only provide a high-level summary of how to use the tool, or perhaps just the most commonly used switches/flags/options.\n\nExample: ping --help\n",
+        "task": "Use '--help' with the tool `ncat`\n",
+        "prompt": "What is the first command line flag/option (e.g., -a, -B, -c) you see?\n",
+        "hint": "Type the command: ncat --help",
+        "command": "ncat --help",
+        "solution": "-4",
+        "flag": "HTH{im_goin_back_to_kali}"
+    },
+    "level02": {
+        "intro": "From a terminal shell, you can almost always type 'man <toolname>' to determine command line syntax and additional switches/flags/options used with the tool. It's similar to --help, but man (which stands for 'manual') typically provides much more granular and verbose help. If you don't get the help you need from --help, man is your next best choice.\n\nExample usage: man ping\n",
+        "task": "Use man with the tool ssh",
+        "prompt": "What is the command argument (i.e., -a -b -c) used to request compression of all data over SSH?\n",
+        "hint": "Type the command: man ssh",
+        "command": "man ssh",
+        "solution": "-C",
+        "flag": "HTH{ssh_dont_tell_anyone_im_a_linux_pro}"
+    }
+}
