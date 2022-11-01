@@ -4,8 +4,8 @@
         "task": "Use '--help' with the tool `ncat`\n",
         "prompt": "What is the first command line flag/option (e.g., -a, -B, -c) you see?\n",
         "hint": "Type the command: ncat --help",
-        "command": "ncat --help",
-        "solution": "-4",
+        "commands": ["ncat --help"],
+        "solutions": ["-4"],
         "flag": "HTH{im_goin_back_to_kali}"
     },
     "level02": {
@@ -13,8 +13,35 @@
         "task": "Use man with the tool ssh",
         "prompt": "What is the command argument (i.e., -a -b -c) used to request compression of all data over SSH?\n",
         "hint": "Type the command: man ssh",
-        "command": "man ssh",
-        "solution": "-C",
-        "flag": "HTH{ssh_dont_tell_anyone_im_a_linux_pro}"
+        "commands": ["man ssh"],
+        "solutions": ["-C"],
+        "flag": "HTH{rtfm}"
+    },
+    "level03": {
+        "intro": "The 'ls' command allows users to list directory contents. So if you want to see what files exist at your current location, just run 'ls'\n",
+        "task": "Using the ls command, find out what files are in your current directory.",
+        "prompt": "What's the name of the file you see?\n",
+        "hint": "Type the command: ls",
+        "commands": ["ls"],
+        "solutions": ["file1.txt"],
+        "flag": "HTH{listin_files}"
+    },
+    "level04": {
+        "intro": "Linux supports hidden files, which start with a period. For example '.hidden' will not show up when running 'ls'.\n",
+        "task": "Run 'man ls' and find the switch that will list hidden files.",
+        "prompt": "Which switch will show all files, including hidden files?",
+        "hint": "Type the command: man ls",
+        "commands": ["man ls"],
+        "solutions": ["-a", "--all"],
+        "flag": "HTH{i_see_hidden_files}"
+    },
+    "level05": {
+        "intro": "The current directory has a hidden file in it.\n",
+        "task": "Use ls with a single switch to find out which hidden file is in the current directory.\n",
+        "prompt": "What's the name of the hidden file you see?\n",
+        "hint": "Type the command: ls -a",
+        "commands": ["ls -a", "ls --all"],
+        "solutions": ".secrets.txt",
+        "flag": "HTH{listin_secrets}"
     }
 }

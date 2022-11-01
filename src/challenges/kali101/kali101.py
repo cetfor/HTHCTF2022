@@ -6,6 +6,9 @@ from python_shell.util.streaming import decode_stream
 COMMANDS = {
     "level01": Shell.ncat('--help'),
     "level02": Shell.man('ssh'),
+    "level03": Shell.ls('sandbox'),
+    "level04": Shell.man('ls'),
+    "level05": Shell.ls('-a', 'sandbox'),
 }
 
 def clear_console():
@@ -29,13 +32,13 @@ def load_level(level, levels):
     while True:
         print(levels[level]['task'])
         command = input("$ ")
-        if command == levels[level]["command"]:
+        if command in levels[level]["commands"]:
             command = COMMANDS[level]
             print(decode_stream(command.output), end="")
             while True:
                 print(f"\n{level} question: {levels[level]['prompt']}")
                 answer = input(f"{level} answer >> ")
-                if answer == levels[level]['solution']:
+                if answer in levels[level]['solutions']:
                     print(f"That's correct! Here's your flag for {level}: {levels[level]['flag']}")
                     return 1
                 else:
@@ -59,7 +62,7 @@ def main():
 
     # Read level data from 'levels.json'
     levels = get_level_data()
-
+    
     # START
     if command.lower() == "start":
         for level in levels:
@@ -69,7 +72,7 @@ def main():
     # LEVEL
     elif command.lower() == "level":
         while True:
-            print("Which level would you like to jump to?")
+            print(f"Which level would you like to jump to [1-{len(levels)}]?")
             selected_level = input(">> ")
             try:
                 selected_level = int(selected_level)
