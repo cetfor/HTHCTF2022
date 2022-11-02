@@ -138,7 +138,7 @@ function authenticateToken(req, res) {
     try {
         const verified = jwt.verify(tokenHeaderKey, jwtSecretKey);
         if(verified){
-            return res.send("hth{JWT_are_a_bit_more_s3cur3!")
+            return res.send("hth{JWT_are_a_bit_more_s3cur3!}")
         }else{
             // Access Denied
             return res.status(401);
