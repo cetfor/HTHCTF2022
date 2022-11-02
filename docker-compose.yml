@@ -28,7 +28,7 @@ services:
      - "7503:7503"
   
   web_the_hunt:
-    build: ./src/challenges/web/theHunt
+    build: ./src/challenges/web/the_hunt
     restart: always
     ports:
      - "7504:7504"
