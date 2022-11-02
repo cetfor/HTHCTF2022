@@ -3,7 +3,7 @@
         "intro": "From a terminal shell, you can almost always type '<toolname> --help' to determine command line syntax and additional switches/flags/options used with the tool.\nIt's worth noting that --help may only provide a high-level summary of how to use the tool, or perhaps just the most commonly used switches/flags/options.\n\nExample: ping --help\n",
         "task": "Use '--help' with the tool `ncat`\n",
         "prompt": "What is the first command line flag/option (e.g., -a, -B, -c) you see?\n",
-        "hint": "Type the command: ncat --help",
+        "hint": "...",
         "commands": ["ncat --help"],
         "solutions": ["-4"],
         "flag": "HTH{im_goin_back_to_kali}"
@@ -12,7 +12,7 @@
         "intro": "From a terminal shell, you can almost always type 'man <toolname>' to determine command line syntax and additional switches/flags/options used with the tool. It's similar to --help, but man (which stands for 'manual') typically provides much more granular and verbose help. If you don't get the help you need from --help, man is your next best choice.\n\nExample usage: man ping\n",
         "task": "Use man with the tool ssh",
         "prompt": "What is the command argument (i.e., -a -b -c) used to request compression of all data over SSH?\n",
-        "hint": "Type the command: man ssh",
+        "hint": "...",
         "commands": ["man ssh"],
         "solutions": ["-C"],
         "flag": "HTH{rtfm}"
@@ -20,28 +20,55 @@
     "level03": {
         "intro": "The 'ls' command allows users to list directory contents. So if you want to see what files exist at your current location, just run 'ls'\n",
         "task": "Using the ls command, find out what files are in your current directory.",
-        "prompt": "What's the name of the file you see?\n",
-        "hint": "Type the command: ls",
+        "prompt": "What's the name of the `.txt` file you see?\n",
+        "hint": "...",
         "commands": ["ls"],
         "solutions": ["file1.txt"],
         "flag": "HTH{listin_files}"
     },
     "level04": {
         "intro": "Linux supports hidden files, which start with a period. For example '.hidden' will not show up when running 'ls'.\n",
-        "task": "Run 'man ls' and find the switch that will list hidden files.",
+        "task": "Run `man ls` and find the switch that will list hidden files.",
         "prompt": "Which switch will show all files, including hidden files?",
-        "hint": "Type the command: man ls",
+        "hint": "...",
         "commands": ["man ls"],
         "solutions": ["-a", "--all"],
         "flag": "HTH{i_see_hidden_files}"
     },
     "level05": {
-        "intro": "The current directory has a hidden file in it.\n",
-        "task": "Use ls with a single switch to find out which hidden file is in the current directory.\n",
+        "intro": "The current directory has a hidden file in it. Can you find it?\n",
+        "task": "Use `ls` with a single switch to find out which hidden file is in the current directory.\n",
         "prompt": "What's the name of the hidden file you see?\n",
-        "hint": "Type the command: ls -a",
+        "hint": "...",
         "commands": ["ls -a", "ls --all"],
-        "solutions": ".secrets.txt",
+        "solutions": [".secrets.txt"],
         "flag": "HTH{listin_secrets}"
+    },
+    "level06": {
+        "intro": "Now that we know a hidden file is here ('.secrets.txt'). How do we read it? The linux command `cat` (short for 'contactendate') can help us!\n\nExample: cat myfile\n",
+        "task": "Print the contexts of the '.secrets.txt' file using cat.\n",
+        "prompt": "Whats the text in the .secrets.txt file?\n",
+        "hint": "...",
+        "commands": ["cat .secrets.txt"],
+        "solutions": ["Supercalifragilisticexpialidocious"],
+        "flag": "HTH{reading_files_like_pro}"
+    },
+    "level07": {
+        "intro": "It's not always apparent what files are in Linux. Unlike Windows, Linux doesn't place significance on file extensions, so you'll commonly see extensionless files. So how do you know what type of file a specific file is? The `file` command can help us here!\n\nExample: file somefile\n",
+        "task": "Use the `file` command to determine what type of file `whatami` is.\n",
+        "prompt": "Whats the reported file type description?\n",
+        "hint": "...",
+        "commands": ["file whatami"],
+        "solutions": ["Adaptive Multi-Rate Codec (GSM telephony)"],
+        "flag": "HTH{i_see_file_formats}"
+    },
+    "level08": {
+        "intro": "If you're ever unsure of what user you're logged in as, you can just ask with the command `whoami`.\n",
+        "task": "Use the `whoami` command to find your username.\n",
+        "prompt": "Who are you logged in as?\n",
+        "hint": "...",
+        "commands": ["whoami"],
+        "solutions": ["nobody"],
+        "flag": "HTH{existential_ctf_challenges}"
     }
 }

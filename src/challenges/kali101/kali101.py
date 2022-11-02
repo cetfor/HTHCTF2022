@@ -9,6 +9,9 @@ COMMANDS = {
     "level03": Shell.ls('sandbox'),
     "level04": Shell.man('ls'),
     "level05": Shell.ls('-a', 'sandbox'),
+    "level06": Shell.cat('sandbox/.secrets.txt'),
+    "level07": Shell.file('sandbox/whatami'),
+    "level08": Shell.whoami(),
 }
 
 def clear_console():
@@ -25,7 +28,8 @@ def get_level_data(file="levels.json"):
 def load_level(level, levels):
     current_level = 0
     for i, l in enumerate(levels):
-        if level == l: current_level = i+1
+        if level == l: 
+            current_level = i+1
     clear_console()
     print(f"Loading level: {current_level}\n")
     print(levels[level]['intro'])
@@ -39,13 +43,13 @@ def load_level(level, levels):
                 print(f"\n{level} question: {levels[level]['prompt']}")
                 answer = input(f"{level} answer >> ")
                 if answer in levels[level]['solutions']:
-                    print(f"That's correct! Here's your flag for {level}: {levels[level]['flag']}")
+                    print(f"\nThat's correct! Here's your flag for {level}: {levels[level]['flag']}")
                     return 1
                 else:
-                    print("Try again!")
+                    print("\nTry again!")
 
 def main():
-    # Greet the user
+    clear_console()
     print(">> Welcome to Hackers Teaching Hackers CTF 2022 Kali 101! <<")
     
     # Prompt the user until they select a valid option
@@ -67,7 +71,7 @@ def main():
     if command.lower() == "start":
         for level in levels:
             load_level(level, levels)
-            input("Press enter to load the next level. Ctrl+C to quit.")
+            input("\nPress enter to load the next level (ctrl+C to quit)")
 
     # LEVEL
     elif command.lower() == "level":
@@ -85,6 +89,9 @@ def main():
         for i, level in enumerate(levels):
             if selected_level == i+1:
                 load_level(level, levels)
+                selected_level += 1
+                if selected_level <= len(levels):
+                    input("\nPress enter to load the next level (ctrl+C to quit)")
 
     # EXIT
     elif command.lower() == "exit":
