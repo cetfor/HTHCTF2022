@@ -32,6 +32,8 @@ services:
     restart: always
     ports:
      - "7504:7504"
+    stdin_open: true
+    tty: true
   
   # Crypto challenges (ports 7601-7605)
   crypto_caesar_salad:
