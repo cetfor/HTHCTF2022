@@ -1,22 +1,8 @@
 FROM node:16
 
-# Create app directory
 WORKDIR /usr/src/app
-
-# copy everything into the container
 COPY . .
-
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-#COPY package*.json ./ 
-#COPY /server/package*.json ./server/
-#COPY *.txt /
-
-RUN npm install
-RUN cd ./server && npm install
-
-# Bundle app source
-#COPY . .
-
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+RUN npm ci
+RUN cd ./server && npm ci
 CMD [ "npm", "start" ]
