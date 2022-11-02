@@ -14,7 +14,6 @@ RUN cd ..
 
 COPY . .
 
-EXPOSE 5000
 EXPOSE 7504
 
 CMD [ "npm", "start" ]
