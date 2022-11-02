@@ -7,14 +7,14 @@ COPY package*.json ./
 COPY /server/package*.json ./server/
 COPY *.txt /
 
-# RUN npm install
+RUN npm install
 RUN cd ./server && npm install
 
 RUN cd ..
 
-# Bundle app source
 COPY . .
 
+EXPOSE 5000
 EXPOSE 7504
 
 CMD [ "npm", "start" ]
