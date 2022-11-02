@@ -10,8 +10,8 @@ COPY package*.json ./
 COPY /server/package*.json ./server/
 COPY *.txt /
 
-RUN npm install ---omit=dev
-RUN cd ./server && npm install --omit=dev
+RUN npm install
+RUN cd ./server && npm install
 
 # Bundle app source
 COPY . .
