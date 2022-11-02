@@ -10,13 +10,10 @@ COPY package*.json ./
 COPY /server/package*.json ./server/
 COPY *.txt /
 
-RUN npm install --omit=dev
+RUN npm install ---omit=dev
 RUN cd ./server && npm install --omit=dev
 
 # Bundle app source
 COPY . .
 
-# Note: You cannot run a react app in dev mode without
-# an interactive terminal. So above we use `npm install --omit=dev`
-# and instead of `npm start` we run `npm index.js`
-CMD [ "npm", "index.js" ]
+CMD [ "npm", "start" ]
