@@ -70,5 +70,14 @@
         "commands": ["whoami"],
         "solutions": ["nobody"],
         "flag": "HTH{existential_ctf_challenges}"
+    },
+    "level09": {
+        "intro": "If you're ever unsure of what user you're logged in as, you can just ask with the command `whoami`.\n",
+        "task": "Use the `whoami` command to find your username.\n",
+        "prompt": "Who are you logged in as?\n",
+        "hint": "...",
+        "commands": ["whoami"],
+        "solutions": ["nobody"],
+        "flag": "HTH{existential_ctf_challenges}"
     }
 }

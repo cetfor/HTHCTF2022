@@ -35,7 +35,10 @@ def load_level(level, levels):
     print(levels[level]['intro'])
     while True:
         print(levels[level]['task'])
-        command = input("$ ")
+        try:
+            command = input("$ ")
+        except EOFError:
+            pass
         if command in levels[level]["commands"]:
             command = COMMANDS[level]
             print(decode_stream(command.output), end="")
