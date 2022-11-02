@@ -3,6 +3,8 @@ FROM node:16
 # Create app directory
 WORKDIR /usr/src/app
 
+RUN mkdir server
+
 COPY /server/package*.json ./server/
 COPY *.txt /
 
