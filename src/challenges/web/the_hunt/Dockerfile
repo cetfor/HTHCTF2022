@@ -19,4 +19,4 @@ RUN cd ./server && npm install
 COPY . .
 
 EXPOSE 7504
-CMD [ "npm", "start" ]
+CMD [ "npm", "index.js" ]

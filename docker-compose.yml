@@ -31,10 +31,8 @@ services:
     build: ./src/challenges/web/the_hunt
     restart: always
     ports:
-     - "7505:7504"
-    stdin_open: true
-    tty: true
-
+     - "7504:7504"
+  
   # Crypto challenges (ports 7601-7605)
   crypto_caesar_salad:
     build: ./src/challenges/crypto/caesar_salad
