@@ -1,0 +1,10 @@
+services:
+  web_the_hunt:
+    build: .
+    restart: always
+    ports:
+     - 7504:7504
+  # nginx:
+  #   image: nginx
+  #       ports:
+  #           - 8000:80

@@ -1,13 +1,13 @@
 const path = require("path");
 const express = require("express");
 const app = express(); 
-const helmet = require("helmet");
+// const helmet = require("helmet");
 const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const fs = require("fs");
-const { CLIENT_RENEG_LIMIT } = require("tls");
+// const { CLIENT_RENEG_LIMIT } = require("tls");
 
-app.use(helmet());
+// app.use(helmet());
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -167,6 +167,6 @@ app.get('/something', (req, res) => {
   res.render("directoryTraversal")
 })
 
-app.listen(7504, '0.0.0.0', () => {
+app.listen(7504, () => {
   console.log("server started");
 });
