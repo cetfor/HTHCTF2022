@@ -30,6 +30,14 @@ docker-compose up       # Run and monitor
 docker-compose up -d    # Run as daemon
 ```
 
+# Viewing logs of daemonized containers
+
+```
+docker-compose logs -f -t
+docker-compose logs -f -t <service_name>
+docker container ls
+```
+
 # Nuking docker 
 
 Run this to blow all Docker images and containers away.
