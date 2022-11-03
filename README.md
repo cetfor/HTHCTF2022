@@ -36,6 +36,6 @@ Run this to blow all Docker images and containers away.
 ```
 docker system prune -a
 docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
-docker rmi $(docker images -a -q)
+docker rm -vf $(docker ps -aq)
+docker rmi -f $(docker images -aq)
 ```
