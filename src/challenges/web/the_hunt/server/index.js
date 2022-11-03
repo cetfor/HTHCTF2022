@@ -167,6 +167,6 @@ app.get('/something', (req, res) => {
   res.render("directoryTraversal")
 })
 
-app.listen(7504, () => {
+app.listen(7504, '0.0.0.0', () => {
   console.log("server started");
 });
